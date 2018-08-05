@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+  <title>Ramón Cárceles</title>
+</head>
+<body>
+
+  <div class="main-container">
+    <section id="page-top" class="header-wrapper">
+      <div class="header">
+        <div class="title">
+          <h1 class="profession">ARQUITECTO</h1>
+          <p class="name">Juan Ramón Cárceles</p>
+        </div>
+        <img class="profile-pic" src="img/pic.jpg" alt="">
+        <p class="about">Soy un arquitecto y diseñador web. Me interesa el uso de software BIM, la mezcla del diseño con la programación... diseño paramétrico, amante de la naturaleza. Aliquam sit amet tellus ut lorem tempus commodo sed sit amet justo. Pellentesque pretium posuere sem, sed gravida nulla maximus vel. Ut vitae pharetra tortor. Nullam sagittis ultricies justo, eget sollicitudin odio dapibus sed. Cras eget justo sed purus scelerisque commodo.</p>
+        <input class="navbar-main__toggle-checkbox" type="checkbox" id="menu-toggle-id" title="Menu">
+      	<label class="navbar-main__toggle-label" for="menu-toggle-id">
+      	  <svg class="navbar-main__icon-hamburger" viewBox="0 0 100 60">
+      			<path d="M0 5 L100 5"></path>
+      			<path d="M0 30 L100 30"></path>
+      			<path d="M0 55 L100 55"></path>
+      	  </svg>
+      	</label>
+        <ul class="navigation">
+          <li><a href="#projects">PORFOLIO</a></li>
+          <li><a href="#curriculum">CURRÍCULUM</a></li>
+          <li><a href="#contact">CONTACTO</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Button-go-top -->
+    <a class="button-go-top button-go-top--pink" title="Ir a principio de página" href="#page-top">
+      <svg class="button-go-top__symbol" viewBox="0 0 100 60">
+        <path d="M50 0 L100 60 L85 60 L50 20 L15 60 L0 60"></path>
+      </svg>
+      <!-- <span class="button-go-top__text">Ir arriba</span> -->
+    </a>
+    <!-- fin Button-go-top -->
+
+    <section class="projects" id="projects">
+      <h2 class="section-title section-title-projects">PORFOLIO</h2>
+      <ul class="list-projects">
+        <li class="project item1">
+          <button data-project="Project1">
+            <img src="img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
+            <p>Atelier escultor</p>
+          </button>
+        </li>
+        <li class="project item2">
+          <button data-project="Project2">
+            <img src="img/projects/extension-albergue-arre.jpg" alt="">
+            <p>Extension albergue</p>
+          </button>
+        </li>
+        <li class="project item3">
+          <button data-project="Project3">
+            <img src="img/projects/les-menuires-rehab.jpg" alt="">
+            <p>Les Menuires Rehab</p>
+          </button>
+        </li>
+        <li class="project item4">
+          <button data-project="Project4">
+            <img src="img/projects/living-the-collective-hornachuelos.jpg" alt="">
+            <p>Living the collective</p>
+          </button>
+        </li>
+        <li class="project item5">
+          <button data-project="Project5">
+            <img src="img/projects/transformacion-area-hostalric.jpg" alt="">
+            <p>Transformación frente muralla</p>
+          </button>
+        </li>
+        <li class="project item6">
+          <button data-project="Project6">
+            <img src="img/projects/transformacion-rubattino-milano.jpg" alt="">
+            <p>Transformación Rubattino</p>
+          </button>
+        </li>
+        <li class="project item7">
+          <button data-project="Project7">
+            <img src="img/projects/lisboa-open-room.jpg" alt="">
+            <p>Lisboa Open Room</p>
+          </button>
+        </li>
+        <li class="project item8">
+          <button data-project="Project8">
+            <img src="img/projects/albergue-cul-lleona.jpg" alt="">
+            <p>Albergue Cul de la Lleona</p>
+          </button>
+        </li>
+        <li class="project item9">
+          <button data-project="Project9">
+            <img src="img/projects/ascensor-fachada.jpg" alt="">
+            <p>Ascensor en fachada</p>
+          </button>
+        </li>
+        <li class="project item10">
+          <button data-project="Project10">
+            <img src="img\projects\hilversum-moke.jpg" alt="">
+            <p>Conjunto residencial Hilversum</p>
+          </button>
+        </li>
+        <li class="project item11">
+          <button data-project="Project11">
+            <img src="img\projects\camping-calonge-dau.jpg" alt="">
+            <p>Camping Calonge</p>
+          </button>
+        </li>
+      </ul>
+      <!-- Modal Project 1 -->
+      <div id="modalProject1" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Título del proyecto</h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/atelier-escultor-girona.jpg">
+              <p class="modal-footer">Primera del escultor</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/extension-albergue-arre.jpg">
+              <p class="modal-footer">Segunda del escultor</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 2 -->
+      <div id="modalProject2" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Título del proyecto</h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/extension-albergue-arre.jpg">
+              <p class="modal-footer">Primera del albergue</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/living-the-collective-hornachuelos.jpg" alt="">
+              <p class="modal-footer">Segunda del albergue</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script type="text/javascript">
+      const images = document.querySelectorAll('.project button');
+      images.forEach(img => img.addEventListener('mouseover', changeImage));
+      images.forEach(img => img.addEventListener('mouseout', normalImage));
+      function changeImage() {this.children[0].src = "img/projects/01-atelier-escultor/ae.gif";}
+      function normalImage() {this.children[0].src = "img/projects/01-atelier-escultor/ae-vista.jpg";}
+    </script>
+
+    <section class="curriculum" id="curriculum">
+      <div>
+        <h2 class="section-title">FORMACIÓN</h2>
+        <ul class="list-studies">
+          <li>
+            <h3>Máster de Aplicaciones Multimedia</h3>
+            <a href="www.uoc.edu">Universitat Oberta de Catalunya</a>
+          </li>
+          <li>
+            <h3>Grado en Arquitectura</h3>
+            <a href="www.udg.edu">Universitat de Girona</a>
+          </li>
+          <li>
+            <h3>Curso JAVA & MySQL</h3>
+            <a href="">Fundació Catalana de l'Esplai</a>
+          </li>
+          <li>
+            <h3>Curso Autodesk Revit</h3>
+            <a href="www.metropa.es">Escuela Metropa</a>
+          </li>
+        </ul>
+
+        <h2 class="section-title">EXPERIENCIA</h2>
+        <ul class="list-experiences">
+          <li>
+            <h3>DAU. Diseny Aruitectura i Urbanisme</h3>
+            <!-- <a href="">www.d-a-u.com</a> -->
+          </li>
+          <li>
+            <h3>Pep Boada</h3>
+            <!-- <a href="www.pepboada.com">www.pepboada.com</a> -->
+          </li>
+          <li>
+            <h3>Moke Architecten</h3>
+            <!-- <a href="www.mokearchitecten.nl">www.mokearchitecten.nl</a> -->
+          </li>
+          <li>
+            <h3>@ n'onA d.o.o.<br>Davor Busnja</h3>
+            <!-- <a href="www.davorbusnja.com">www.davorbusnja.com</a> -->
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">CONTACTO</h2>
+      <div class="contact-info">
+        <div class="email">
+          <p>juanramoncarceles@gmail.com</p>
+          <span class="tooltip">¡Haz click para copiarlo!</span>
+        </div>
+        <a href="www.linkedin.com/in/ramoncarceles">LinkedIn</a>
+      </div>
+    </section>
+
+  </div>
+
+  <script src="scripts/modalWindows.js"></script>
+  <script src="scripts/copyToClipboard.js"></script>
+
+</body>
+</html>
