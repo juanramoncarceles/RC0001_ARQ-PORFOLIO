@@ -3,11 +3,11 @@
   --dark-brown: #856565;
 
   /*Not used*/
-  --light-brown-green: #C0BAAD;
+  --light-brown-green: #c0baad;
 }
 
 html {
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
 }
 
 body {
@@ -47,7 +47,27 @@ body {
   display: block;
 }
 
+.go-to-frontend {
+  position: fixed;
+  bottom: 0.4rem;
+  left: 0.4rem;
+  font-size: 0.65rem;
+  z-index: 15;
+  background-color: rgba(0, 117, 137, 0.5);
+  text-decoration: none;
+  padding: 0.1rem;
+  color: white;
+}
 
+.go-to-frontend:hover {
+  background-color: rgb(0, 117, 137);
+}
+
+@media (max-width: 680px) {
+  .go-to-frontend {
+    background-color: rgb(0, 117, 137);
+  }
+}
 
 .main-container {
   max-width: 900px;
@@ -79,7 +99,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   grid-column: 2/4;
-  font-family: 'Julius Sans One', sans-serif;
+  font-family: "Julius Sans One", sans-serif;
   width: 21rem;
   align-self: flex-start;
 }
@@ -172,10 +192,18 @@ body {
     background-color: var(--light-brown);
     margin-bottom: 0.3rem;
   }
-  .navigation li a {color: #000;}
-  .navigation li:nth-child(1) {transition-delay: 0.4s;}
-  .navigation li:nth-child(2) {transition-delay: 0.6s;}
-  .navigation li:nth-child(3) {transition-delay: 0.2s;}
+  .navigation li a {
+    color: #000;
+  }
+  .navigation li:nth-child(1) {
+    transition-delay: 0.4s;
+  }
+  .navigation li:nth-child(2) {
+    transition-delay: 0.6s;
+  }
+  .navigation li:nth-child(3) {
+    transition-delay: 0.2s;
+  }
   .about {
     background-image: linear-gradient(var(--light-brown), #f8f8f8);
   }
@@ -201,45 +229,46 @@ body {
 /*TOGGLER*/
 
 .navbar-main__toggle-checkbox {
-	display: none;
+  display: none;
 }
 
 .navbar-main__toggle-checkbox:checked ~ .navigation {
   transform: translateX(0%);
   transition-delay: 0s;
 }
-.navbar-main__toggle-checkbox:checked ~ .navigation li { /*shows - hides the menu*/
-	transform: translateX(0%);
+.navbar-main__toggle-checkbox:checked ~ .navigation li {
+  /*shows - hides the menu*/
+  transform: translateX(0%);
 }
 
 .navbar-main__toggle-label {
-	display: none;
-	position: fixed;
+  display: none;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 3;
 }
 
 .navbar-main__toggle-label:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .navbar-main__icon-hamburger {
-	display: block;
-	width: 40px;
-	height: 60px;
-	padding-right: 15px;
-	padding-left: 15px;
+  display: block;
+  width: 30px;
+  height: 50px;
+  padding-right: 15px;
+  padding-left: 15px;
   background-color: rgba(133, 101, 101, 0.4);
-	stroke: #fff;
-	stroke-width:10;
+  stroke: #fff;
+  stroke-width: 10;
 }
 
 @media (max-width: 680px) {
   /*TOGGLER*/
   .navbar-main__toggle-label {
-		display: block;
-	}
+    display: block;
+  }
 }
 
 /**********************/
@@ -279,11 +308,18 @@ body {
   content: "";
   position: absolute;
   top: 100%;
-  height: 20%;
+  height: 16%;
   width: 100%;
   background: url(../img/triangle-down.svg) no-repeat bottom;
   background-size: 100%;
 }
+
+.project__info {
+  display: block;
+  color: grey;
+  font-style: italic;
+}
+
 @media (max-width: 380px) {
   .list-projects::after {
     height: 8%;
@@ -298,6 +334,7 @@ body {
 .project button:hover p,
 .project button:focus p {
   font-weight: bold;
+  font-size: 0.82rem;
 }
 
 .project button {
@@ -305,7 +342,7 @@ body {
   border: 0;
   background-color: rgba(0, 0, 0, 0);
   cursor: pointer;
-  font-family: 'Encode Sans Semi Expanded', sans-serif;
+  font-family: "Encode Sans Semi Expanded", sans-serif;
 }
 
 .project button img {
@@ -481,17 +518,21 @@ body {
   background-color: #f8f8f8;
 }
 
+.curriculum__link {
+  font-size: 0.8rem;
+}
+
 .curriculum a {
   color: #000;
   text-decoration: none;
-  font-size: 0.8rem;
 }
 
 .curriculum div {
   width: 100%;
 }
 
-.list-studies, .list-experiences {
+.list-studies,
+.list-experiences {
   padding: 0;
   list-style-type: none;
   display: grid;
@@ -499,18 +540,29 @@ body {
   grid-gap: 20px;
 }
 
+.experience__period {
+  font-size: 0.8rem;
+  margin: 0;
+}
+
 @media (max-width: 680px) {
-  .list-studies, .list-experiences {
+  .list-studies,
+  .list-experiences {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .curriculum {
+    padding-bottom: 3rem;
   }
 }
 @media (max-width: 380px) {
-  .list-studies, .list-experiences {
+  .list-studies,
+  .list-experiences {
     grid-template-columns: repeat(1, 1fr);
   }
 }
 
-.list-studies li, .list-experiences li {
+.list-studies li,
+.list-experiences li {
   background-color: var(--light-brown);
   padding: 1rem;
   text-align: center;
@@ -518,11 +570,10 @@ body {
   flex-direction: column;
 }
 
-.list-studies li h3, .list-experiences li h3 {
+.list-studies li h3,
+.list-experiences li h3 {
   flex-grow: 1;
 }
-
-
 
 /*********************/
 /***SECTION CONTACT***/
@@ -543,43 +594,41 @@ body {
 }
 
 .email {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .email .tooltip {
-    visibility: hidden;
-    background-color: #555;
-    color: #fff;
-    border-radius: 4px;
-    padding: 4px;
-    position: absolute;
-    z-index: 1;
-    bottom: 80%;
-    left: 44%;
-    margin-left: -75px;
-    opacity: 0;
-    transition: opacity 0.3s;
+  visibility: hidden;
+  background-color: #555;
+  color: #fff;
+  border-radius: 4px;
+  padding: 4px;
+  position: absolute;
+  z-index: 1;
+  bottom: 80%;
+  left: 44%;
+  margin-left: -75px;
+  opacity: 0;
+  transition: opacity 0.3s;
 }
 
 .email .tooltip::after {
-    content: "";
-    position: absolute;
-    top: 100%;
-    left: 50%;
-    margin-left: -5px;
-    border-width: 5px;
-    border-style: solid;
-    border-color: #555 transparent transparent transparent;
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
 }
 
 .email:hover .tooltip {
-    visibility: visible;
-    opacity: 1;
+  visibility: visible;
+  opacity: 1;
 }
-
-
 
 /* The Modal (background) */
 .modal {
@@ -591,8 +640,8 @@ body {
   width: 100%;
   height: 100%;
   overflow: auto; /* Enable scroll if needed */
-  background-color: rgb(0,0,0); /* Fallback color */
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 /* Modal Content */
@@ -604,7 +653,7 @@ body {
   border: 1px solid #888;
   max-height: 100%;
   max-width: 800px; /*Here change size of modal window*/
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 /* The Close Button */
@@ -628,15 +677,24 @@ body {
 .modal-header {
   padding: 0.8rem;
   background-color: #fff;
+  text-align: center;
 }
 
 .modal-header h2 {
   margin: 0;
   display: inline-block;
-  line-height: 2rem;
+  line-height: 1.6rem;
+  font-size: 1.2rem;
 }
 
-.modal-body img {
+.modal-header h2 span {
+  color: #856565;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.modal-body img,
+.modal-body video {
   width: 100%;
   display: block;
 }
@@ -645,9 +703,12 @@ body {
   margin: 0;
   padding: 0.8rem;
   background-color: #fff;
+  text-align: center;
 }
 
-.projectSlides {display: none;}
+.projectSlides {
+  display: none;
+}
 
 /* Next & previous buttons */
 .prev,

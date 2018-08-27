@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
   <link rel="stylesheet" href="styles/styles.css">
   <title>Ramón Cárceles</title>
 </head>
+
 <body>
 
   <div class="main-container">
@@ -18,16 +20,20 @@
           <h1 class="profession">ARQUITECTO</h1>
           <p class="name">Juan Ramón Cárceles</p>
         </div>
-        <img class="profile-pic" src="img/pic.jpg" alt="">
-        <p class="about">Soy un arquitecto y diseñador web. Me interesa el uso de software BIM, la mezcla del diseño con la programación... diseño paramétrico, amante de la naturaleza. Aliquam sit amet tellus ut lorem tempus commodo sed sit amet justo. Pellentesque pretium posuere sem, sed gravida nulla maximus vel. Ut vitae pharetra tortor. Nullam sagittis ultricies justo, eget sollicitudin odio dapibus sed. Cras eget justo sed purus scelerisque commodo.</p>
+        <img class="profile-pic" src="img/pic.jpg" alt="Juan Ramón imagen de perfil">
+        <p class="about">Soy un joven arquitecto con experiencia en España y en el extranjero en proyectos de varias escalas,
+          diseño de objetos e infografía arquitectónica. Me interesa la interacción entre la tecnología y el diseño, en especial
+          el uso de software BIM y diseño paramétrico debido a las mejoras cualitativas que aportan al proceso proyectual.
+          He estudiado arquitectura en Girona y en Milán y actualmente estoy terminando el Máster de aplicaciones multimedia
+          en la UOC.</p>
         <input class="navbar-main__toggle-checkbox" type="checkbox" id="menu-toggle-id" title="Menu">
-      	<label class="navbar-main__toggle-label" for="menu-toggle-id">
-      	  <svg class="navbar-main__icon-hamburger" viewBox="0 0 100 60">
-      			<path d="M0 5 L100 5"></path>
-      			<path d="M0 30 L100 30"></path>
-      			<path d="M0 55 L100 55"></path>
-      	  </svg>
-      	</label>
+        <label class="navbar-main__toggle-label" for="menu-toggle-id">
+          <svg class="navbar-main__icon-hamburger" viewBox="0 0 100 60">
+            <path d="M0 5 L100 5"></path>
+            <path d="M0 30 L100 30"></path>
+            <path d="M0 55 L100 55"></path>
+          </svg>
+        </label>
         <ul class="navigation">
           <li><a href="#projects">PORFOLIO</a></li>
           <li><a href="#curriculum">CURRÍCULUM</a></li>
@@ -45,91 +51,105 @@
     </a>
     <!-- fin Button-go-top -->
 
+    <a class="go-to-frontend" title="Ir a porfolio desarrollador web" href="../../">Porfolio frontend developer</a>
+
     <section class="projects" id="projects">
       <h2 class="section-title section-title-projects">PORFOLIO</h2>
       <ul class="list-projects">
         <li class="project item1">
-          <button data-project="Project1">
+          <button data-project="Project01">
             <img src="img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
-            <p>Atelier escultor</p>
+            <p>Atelier escultor<br><span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item2">
-          <button data-project="Project2">
-            <img src="img/projects/extension-albergue-arre.jpg" alt="">
-            <p>Extension albergue</p>
+          <button data-project="Project02">
+            <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
+            <p>Extensión albergue<br><span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item3">
-          <button data-project="Project3">
-            <img src="img/projects/les-menuires-rehab.jpg" alt="">
-            <p>Les Menuires Rehab</p>
+          <button data-project="Project03">
+            <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
+            <p>Extensión ski resort<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item4">
-          <button data-project="Project4">
-            <img src="img/projects/living-the-collective-hornachuelos.jpg" alt="">
-            <p>Living the collective</p>
+          <button data-project="Project04">
+            <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
+            <p>Bloque residencial<br><span class="project__info">con MOKE Architecten</span></p>
           </button>
         </li>
         <li class="project item5">
-          <button data-project="Project5">
-            <img src="img/projects/transformacion-area-hostalric.jpg" alt="">
-            <p>Transformación frente muralla</p>
+          <button data-project="Project05">
+            <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
+            <p>Transformación frente muralla<span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item6">
-          <button data-project="Project6">
-            <img src="img/projects/transformacion-rubattino-milano.jpg" alt="">
-            <p>Transformación Rubattino</p>
+          <button data-project="Project06">
+            <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
+            <p>Vivienda unifamiliar<span class="project__info">con NONA doo</span></p>
           </button>
         </li>
         <li class="project item7">
-          <button data-project="Project7">
-            <img src="img/projects/lisboa-open-room.jpg" alt="">
-            <p>Lisboa Open Room</p>
+          <button data-project="Project07">
+            <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
+            <p>Glamping bungalow<br><span class="project__info">con DAU</span></p>
           </button>
         </li>
         <li class="project item8">
-          <button data-project="Project8">
-            <img src="img/projects/albergue-cul-lleona.jpg" alt="">
-            <p>Albergue Cul de la Lleona</p>
+          <button data-project="Project08">
+            <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
+            <p>Espacio polivalente<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item9">
-          <button data-project="Project9">
-            <img src="img/projects/ascensor-fachada.jpg" alt="">
-            <p>Ascensor en fachada</p>
+          <button data-project="Project09">
+            <img src="img/projects/09-hornachuelos-residencial/hr-vista1.jpg" alt="">
+            <p>Bloque residencial<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item10">
           <button data-project="Project10">
-            <img src="img\projects\hilversum-moke.jpg" alt="">
-            <p>Conjunto residencial Hilversum</p>
+            <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
+            <p>Espacio multifuncional<br><span class="project__info">con Pep Boada</span></p>
           </button>
         </li>
         <li class="project item11">
           <button data-project="Project11">
-            <img src="img\projects\camping-calonge-dau.jpg" alt="">
-            <p>Camping Calonge</p>
+            <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
+            <p>Conjunto residencial<br><span class="project__info">Académico</span></p>
           </button>
         </li>
       </ul>
       <!-- Modal Project 1 -->
-      <div id="modalProject1" class="modal">
+      <div id="modalProject01" class="modal">
         <div class="modal-content">
           <div class="modal-header">
-            <h2>Título del proyecto</h2>
+            <h2>Atelier escultor<br><span>Girona - Proyecto académico</span></h2>
             <button class="close">&times;</button>
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/atelier-escultor-girona.jpg">
-              <p class="modal-footer">Primera del escultor</p>
+              <img src="img/projects/01-atelier-escultor/ae-situacion.jpg">
+              <p class="modal-footer">Situación en el barrio de Sant Daniel</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/extension-albergue-arre.jpg">
-              <p class="modal-footer">Segunda del escultor</p>
+              <img src="img/projects/01-atelier-escultor/ae-planta-seccion.jpg">
+              <p class="modal-footer">Planta y secciones</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/01-atelier-escultor/ae-axo-detalles.jpg">
+              <p class="modal-footer">Axonometría y detalles estructurales</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/01-atelier-escultor/ae-maqueta.jpg">
+              <p class="modal-footer">Maqueta</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/01-atelier-escultor/ae-vista.jpg">
+              <p class="modal-footer">Vista del interior</p>
             </div>
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
@@ -137,20 +157,357 @@
         </div>
       </div>
       <!-- Modal Project 2 -->
-      <div id="modalProject2" class="modal">
+      <div id="modalProject02" class="modal">
         <div class="modal-content">
           <div class="modal-header">
-            <h2>Título del proyecto</h2>
+            <h2>Extensión albergue<br><span>Trinidad de Arre - Proyecto académico</span></h2>
             <button class="close">&times;</button>
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/extension-albergue-arre.jpg">
-              <p class="modal-footer">Primera del albergue</p>
+              <video src="img/projects/02-extension-albergue/ea-video1.mp4" controls></video>
+              <p class="modal-footer">Recorrido exterior</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/living-the-collective-hornachuelos.jpg" alt="">
-              <p class="modal-footer">Segunda del albergue</p>
+              <video src="img/projects/02-extension-albergue/ea-video2.mp4" controls></video>
+              <p class="modal-footer">Recorrido interior</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/02-extension-albergue/ea-plantas.jpg">
+              <p class="modal-footer">Plantas</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/02-extension-albergue/ea-seccion.jpg" alt="">
+              <p class="modal-footer">Sección</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/02-extension-albergue/ea-maqueta.jpg" alt="">
+              <p class="modal-footer">Maqueta</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
+              <p class="modal-footer">Vista exterior</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/02-extension-albergue/ea-vista-interior.jpg" alt="">
+              <p class="modal-footer">Vista interior</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 3 -->
+      <div id="modalProject03" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Extensión ski resort<br><span>Les Menuires - Concurso de ideas</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/03-menuires-rehab/mr-concept.jpg" alt="">
+              <p class="modal-footer">Estrategia y concepto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/03-menuires-rehab/mr-axo.jpg" alt="">
+              <p class="modal-footer">Axonometria</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/03-menuires-rehab/mr-plantas.jpg" alt="">
+              <p class="modal-footer">Plantas</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
+              <p class="modal-footer">Vista general</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 4 -->
+      <div id="modalProject04" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Bloque residencial<br><span>Hilversum - con MOKE Architekten</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
+              <p class="modal-footer">Vista del acceso principal</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/04-hilversum-residential/hr-vista2.jpg" alt="">
+              <p class="modal-footer">Vista desde la carretera</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/04-hilversum-residential/hr-vista3.jpg" alt="">
+              <p class="modal-footer">Vista posterior</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 5 -->
+      <div id="modalProject05" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Transformación frente muralla<br><span>Hostalric - Proyecto final de carrera</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-planta-seccion.jpg" alt="">
+              <p class="modal-footer">Sección y planta general</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-axo.jpg" alt="">
+              <p class="modal-footer">Axonometria</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-alzado.jpg" alt="">
+              <p class="modal-footer">Alzado general</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-centro.jpg" alt="">
+              <p class="modal-footer">Vista delante del centro cívico</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-general.jpg" alt="">
+              <p class="modal-footer">Vista general</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-restaurante.jpg" alt="">
+              <p class="modal-footer">Vista interior restaurante</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
+              <p class="modal-footer">Vista aerea</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 6 -->
+      <div id="modalProject06" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Vivienda unifamiliar<br><span>Plat (Dubrovnik) - con NONA doo</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/06-plat-house/ph-planta-seccion.jpg" alt="">
+              <p class="modal-footer">Plantas y secciones</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/06-plat-house/ph-railing-detail.jpg" alt="">
+              <p class="modal-footer">Detalle de la barandilla</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/06-plat-house/ph-rotation.gif" alt="">
+              <p class="modal-footer">Vistas</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/06-plat-house/ph-left-view.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
+              <p class="modal-footer">Vista general</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 7 -->
+      <div id="modalProject07" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Glamping bungalow<br><span>St. Antoni de Calonge - con DAU</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-planta.jpg" alt="">
+              <p class="modal-footer">Plantas</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-emplazamiento1.jpg" alt="">
+              <p class="modal-footer">Emplazamiento primera opción</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-emplazamiento2.jpg" alt="">
+              <p class="modal-footer">Emplazamiento segunda opción</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
+              <p class="modal-footer">Vista aérea</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-vista2.jpg" alt="">
+              <p class="modal-footer">Vista del acceso</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/07-camping-calonge/cc-vista3.jpg" alt="">
+              <p class="modal-footer">Vista interior</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 8 -->
+      <div id="modalProject08" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Espacio polivalente<br><span>Lisboa - Concurso de ideas</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/08-lisboa-open-room/lor-planta.jpg" alt="">
+              <p class="modal-footer">Planta</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/08-lisboa-open-room/lor-axo.jpg" alt="">
+              <p class="modal-footer">Axonometria</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/08-lisboa-open-room/lor-maqueta1.jpg" alt="">
+              <p class="modal-footer">Maqueta</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/08-lisboa-open-room/lor-maqueta2.jpg" alt="">
+              <p class="modal-footer">Maqueta</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
+              <p class="modal-footer">Vista del espacio semi interior principal</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 9 -->
+      <div id="modalProject09" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Bloque residencial<br><span>Hornachuelos - Concurso de ideas</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/09-hornachuelos-residencial/hr-esquema-funcional.jpg" alt="">
+              <p class="modal-footer">Esquema funcional</p>
+            </div>
+            <div class="project-slides">
+              <video src="img/projects/09-hornachuelos-residencial/hr-video.mp4" controls></video>
+              <p class="modal-footer">Vista general exterior</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/09-hornachuelos-residencial/hr-plantas.jpg" alt="">
+              <p class="modal-footer">Plantas</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/09-hornachuelos-residencial/hr-seccion.jpg" alt="">
+              <p class="modal-footer">Sección</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/09-hornachuelos-residencial/hr-vista2.jpg" alt="">
+              <p class="modal-footer">Vista del espació común interior</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 10 -->
+      <div id="modalProject10" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Espacio multifuncional<br><span>Barberà del Vallès - con Pep Boada</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-planta-baja.jpg" alt="">
+              <p class="modal-footer">Planta baja</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-planta-primera.jpg" alt="">
+              <p class="modal-footer">Planta primera</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-seccion.jpg" alt="">
+              <p class="modal-footer">Sección</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-vista2.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-vista3.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-vista4.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/10-eiti-barbera/eb-vista5.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 11 -->
+      <div id="modalProject11" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Conjunto residencial<br><span>Milán - Proyecto académico</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-axo.jpg" alt="">
+              <p class="modal-footer">Axonometria del complejo</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-planta-baja.jpg" alt="">
+              <p class="modal-footer">Planta baja bloque</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-planta-primera.jpg" alt="">
+              <p class="modal-footer">Planta primera bloque</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-planta-torres.jpg" alt="">
+              <p class="modal-footer">Planta niveles superiores bloque</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-seccion.jpg" alt="">
+              <p class="modal-footer">Sección</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/11-rubattino-residential/rr-vista2.jpg" alt="">
+              <p class="modal-footer">Vista</p>
             </div>
             <a class="prev">&#10094;</a>
             <a class="next">&#10095;</a>
@@ -159,53 +516,45 @@
       </div>
     </section>
 
-    <script type="text/javascript">
-      const images = document.querySelectorAll('.project button');
-      images.forEach(img => img.addEventListener('mouseover', changeImage));
-      images.forEach(img => img.addEventListener('mouseout', normalImage));
-      function changeImage() {this.children[0].src = "img/projects/01-atelier-escultor/ae.gif";}
-      function normalImage() {this.children[0].src = "img/projects/01-atelier-escultor/ae-vista.jpg";}
-    </script>
-
     <section class="curriculum" id="curriculum">
       <div>
         <h2 class="section-title">FORMACIÓN</h2>
         <ul class="list-studies">
           <li>
             <h3>Máster de Aplicaciones Multimedia</h3>
-            <a href="www.uoc.edu">Universitat Oberta de Catalunya</a>
+            <a class="curriculum__link" href="www.uoc.edu">Universitat Oberta de Catalunya</a>
           </li>
           <li>
             <h3>Grado en Arquitectura</h3>
-            <a href="www.udg.edu">Universitat de Girona</a>
+            <a class="curriculum__link" href="www.udg.edu">Universitat de Girona</a>
           </li>
           <li>
             <h3>Curso JAVA & MySQL</h3>
-            <a href="">Fundació Catalana de l'Esplai</a>
+            <a class="curriculum__link" href="">Fundació Catalana de l'Esplai</a>
           </li>
           <li>
             <h3>Curso Autodesk Revit</h3>
-            <a href="www.metropa.es">Escuela Metropa</a>
+            <a class="curriculum__link" href="www.metropa.es">Escuela Metropa</a>
           </li>
         </ul>
 
         <h2 class="section-title">EXPERIENCIA</h2>
         <ul class="list-experiences">
           <li>
-            <h3>DAU. Diseny Aruitectura i Urbanisme</h3>
-            <!-- <a href="">www.d-a-u.com</a> -->
+            <h3>DAU. Diseny Arquitectura i Urbanisme</h3>
+            <p class="experience__period">Jun.2017 | Ago.2018</p>
           </li>
           <li>
-            <h3>Pep Boada</h3>
-            <!-- <a href="www.pepboada.com">www.pepboada.com</a> -->
+            <h3><a href="www.pepboada.com">Pep Boada</a></h3>
+            <p class="experience__period">Feb.2017 | Ago.2017</p>
           </li>
           <li>
-            <h3>Moke Architecten</h3>
-            <!-- <a href="www.mokearchitecten.nl">www.mokearchitecten.nl</a> -->
+            <h3><a href="www.mokearchitecten.nl">Moke Architecten</a></h3>
+            <p class="experience__period">Nov.2016 | Abr.2017</p>
           </li>
           <li>
-            <h3>@ n'onA d.o.o.<br>Davor Busnja</h3>
-            <!-- <a href="www.davorbusnja.com">www.davorbusnja.com</a> -->
+            <h3><a href="www.davorbusnja.com">@ n'onA d.o.o.<br>Davor Busnja</a></h3>
+            <p class="experience__period">May.2016 | Ago.2016</p>
           </li>
         </ul>
       </div>
@@ -225,7 +574,9 @@
   </div>
 
   <script src="scripts/modalWindows.js"></script>
+  <script src="scripts/previewSlides.js"></script>
   <script src="scripts/copyToClipboard.js"></script>
 
 </body>
+
 </html>
