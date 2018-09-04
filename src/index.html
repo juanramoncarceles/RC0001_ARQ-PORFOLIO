@@ -53,70 +53,76 @@
 
     <a class="go-to-frontend" title="Ir a porfolio frontend developer" href="../dev">Porfolio frontend developer</a>
 
-    <section class="projects" id="projects">
+    <section class="projects-container" id="projects">
       <h2 class="section-title section-title-projects">PORFOLIO</h2>
+      <select class="project-type-selector" id="typeOfProjectSelector" title="Filtra por tipo de proyecto">
+        <option value="all">Todos los proyectos</option>
+        <option value="architecture">Arquitectura</option>
+        <option value="furnitureObjects">Mobiliario y objetos</option>
+        <option value="parametric">Paramétrico</option>
+      </select>
       <ul class="list-projects">
-        <li class="project item1">
+        <li class="project item1" data-projecttype="architecture">
           <button data-project="Project01">
             <img src="img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
             <p>Atelier escultor<br><span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item2">
+        <li class="project item2" data-projecttype="architecture">
           <button data-project="Project02">
             <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
             <p>Extensión albergue<br><span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item3">
+        <li class="project item3" data-projecttype="parametric">
           <button data-project="Project03">
             <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
             <p>Extensión ski resort<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item4">
+        <li class="project item4" data-projecttype="architecture">
           <button data-project="Project04">
             <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">con MOKE Architecten</span></p>
           </button>
         </li>
-        <li class="project item5">
+        <li class="project item5" data-projecttype="architecture">
           <button data-project="Project05">
             <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
             <p>Transformación frente muralla<span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item6">
+        <li class="project item6" data-projecttype="architecture">
           <button data-project="Project06">
             <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
             <p>Vivienda unifamiliar<span class="project__info">con NONA doo</span></p>
           </button>
         </li>
-        <li class="project item7">
+        <li class="project item7" data-projecttype="architecture">
           <button data-project="Project07">
             <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
             <p>Glamping bungalow<br><span class="project__info">con DAU</span></p>
           </button>
         </li>
-        <li class="project item8">
+        <li class="project item8" data-projecttype="architecture">
           <button data-project="Project08">
             <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
             <p>Espacio polivalente<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item9">
+        <li class="project item9" data-projecttype="architecture">
           <button data-project="Project09">
             <img src="img/projects/09-hornachuelos-residencial/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item10">
+        <li class="project item10" data-projecttype="architecture">
           <button data-project="Project10">
             <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
             <p>Espacio multifuncional<br><span class="project__info">con Pep Boada</span></p>
           </button>
         </li>
-        <li class="project item11">
+        <li class="project item11" data-projecttype="architecture">
           <button data-project="Project11">
             <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
             <p>Conjunto residencial<br><span class="project__info">Académico</span></p>
@@ -577,6 +583,7 @@
 
   <script src="scripts/modalWindows.js"></script>
   <script src="scripts/previewSlides.js"></script>
+  <script src="scripts/filterProjects.js"></script>
   <script src="scripts/copyToClipboard.js"></script>
 
 </body>
