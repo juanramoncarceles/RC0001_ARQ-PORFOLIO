@@ -21,10 +21,14 @@
           <p class="name">Juan Ramón Cárceles</p>
         </div>
         <img class="profile-pic" src="img/pic.jpg" alt="Juan Ramón imagen de perfil">
-        <p class="about">Soy un joven arquitecto con experiencia en despachos tanto de España como del extranjero y en proyectos
-          de varias escalas, diseño de objetos e infografía arquitectónica. Me interesa la interacción entre la tecnología
-          y el diseño, en especial el uso de software BIM y diseño paramétrico debido a las mejoras cualitativas que aportan
-          al proceso proyectual. He estudiado arquitectura en Girona y en Milán y actualmente estoy terminando el Máster
+        <p class="about">Soy un joven arquitecto con experiencia en despachos tanto de España como del extranjero y en
+          proyectos
+          de varias escalas, diseño de objetos e infografía arquitectónica. Me interesa la interacción entre la
+          tecnología
+          y el diseño, en especial el uso de software BIM y diseño paramétrico debido a las mejoras cualitativas que
+          aportan
+          al proceso proyectual. He estudiado arquitectura en Girona y en Milán y actualmente estoy terminando el
+          Máster
           de aplicaciones multimedia en la UOC.</p>
         <input class="navbar-main__toggle-checkbox" type="checkbox" id="menu-toggle-id" title="Menu">
         <label class="navbar-main__toggle-label" for="menu-toggle-id">
@@ -54,78 +58,91 @@
     <a class="go-to-frontend" title="Ir a porfolio frontend developer" href="../dev">Porfolio frontend developer</a>
 
     <section class="projects-container" id="projects">
-      <h2 class="section-title section-title-projects">PORFOLIO</h2>
+      <h2 class="section-title section-title-projects">PORTFOLIO</h2>
       <select class="project-type-selector" id="typeOfProjectSelector" title="Filtra por tipo de proyecto">
         <option value="all">Todos los proyectos</option>
-        <option value="architecture">Arquitectura</option>
-        <option value="furnitureObjects">Mobiliario y objetos</option>
-        <option value="parametric">Paramétrico</option>
+        <!-- <option value="academic">Académicos</option>
+        <option value="parametric">Diseño paramétrico</option>
+        <option value="collaboration">Colaboraciones</option>
+        <option value="competition">Concursos</option> -->
       </select>
       <ul class="list-projects">
-        <li class="project item1" data-projecttype="architecture">
+        <li class="project item1" data-projecttype="academic">
           <button data-project="Project01">
             <img src="img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
             <p>Atelier escultor<br><span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item2" data-projecttype="architecture">
+        <li class="project item2" data-projecttype="academic">
           <button data-project="Project02">
             <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
             <p>Extensión albergue<br><span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item3" data-projecttype="parametric">
+        <li class="project item3" data-projecttype="competition">
           <button data-project="Project03">
             <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
             <p>Extensión ski resort<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item4" data-projecttype="architecture">
+        <li class="project item4" data-projecttype="collaboration">
           <button data-project="Project04">
             <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">con MOKE Architecten</span></p>
           </button>
         </li>
-        <li class="project item5" data-projecttype="architecture">
+        <li class="project item5" data-projecttype="academic">
           <button data-project="Project05">
             <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
             <p>Transformación frente muralla<span class="project__info">Académico</span></p>
           </button>
         </li>
-        <li class="project item6" data-projecttype="architecture">
+        <li class="project item6" data-projecttype="collaboration">
           <button data-project="Project06">
             <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
             <p>Vivienda unifamiliar<span class="project__info">con NONA doo</span></p>
           </button>
         </li>
-        <li class="project item7" data-projecttype="architecture">
+        <li class="project item7" data-projecttype="collaboration">
           <button data-project="Project07">
             <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
             <p>Glamping bungalow<br><span class="project__info">con DAU</span></p>
           </button>
         </li>
-        <li class="project item8" data-projecttype="architecture">
+        <li class="project item8" data-projecttype="competition">
           <button data-project="Project08">
             <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
             <p>Espacio polivalente<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item9" data-projecttype="architecture">
+        <li class="project item9" data-projecttype="competition">
           <button data-project="Project09">
             <img src="img/projects/09-hornachuelos-residencial/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
-        <li class="project item10" data-projecttype="architecture">
+        <li class="project item10" data-projecttype="collaboration">
           <button data-project="Project10">
             <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
             <p>Espacio multifuncional<br><span class="project__info">con Pep Boada</span></p>
           </button>
         </li>
-        <li class="project item11" data-projecttype="architecture">
+        <li class="project item11" data-projecttype="academic">
           <button data-project="Project11">
             <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
             <p>Conjunto residencial<br><span class="project__info">Académico</span></p>
+          </button>
+        </li>
+        <li class="project item12" data-projecttype="collaboration parametric">
+          <button data-project="Project12">
+            <img src="img/projects/12-oficinas-celra/oc-portada.jpg" alt="">
+            <p>Oficinas Celrà<br><span class="project__info">con DAU</span></p>
+          </button>
+        </li>
+        <li class="project item13" data-projecttype="parametric">
+          <button data-project="Project13">
+            <img src="img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
+            <p>Pendientes caracola<br><span class="project__info">diseño joyas</span></p>
           </button>
         </li>
       </ul>
@@ -520,6 +537,84 @@
           </div>
         </div>
       </div>
+      <!-- Modal Project 12 -->
+      <div id="modalProject12" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Oficinas Celrà<br><span>Celrà - con DAU</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/12-oficinas-celra/oc-vista1.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/12-oficinas-celra/oc-vista2.jpg" alt="">
+              <p class="modal-footer">Vista</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/12-oficinas-celra/oc-algoritmos-gh.jpg" alt="">
+              <p class="modal-footer">Algoritmos de Grasshopper</p>
+            </div>
+            <div class="project-slides">
+              <video src="img/projects/12-oficinas-celra/oc-video-techo.mp4" controls></video>
+              <p class="modal-footer">Video pruebas falso techo entrada</p>
+            </div>
+            <div class="project-slides">
+              <video src="img/projects/12-oficinas-celra/oc-video-filtro.mp4" controls></video>
+              <p class="modal-footer">Video pruebas filtro salas reunión</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
+      <!-- Modal Project 13 -->
+      <div id="modalProject13" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h2>Pendientes caracola<br><span>diseño joyas</span></h2>
+            <button class="close">&times;</button>
+          </div>
+          <div class="modal-body">
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
+              <p class="modal-footer">Foto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-foto3.jpg" alt="">
+              <p class="modal-footer">Foto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-planos.jpg" alt="">
+              <p class="modal-footer">Planos</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-foto5.jpg" alt="">
+              <p class="modal-footer">Foto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-foto2.jpg" alt="">
+              <p class="modal-footer">Foto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-foto1.jpg" alt="">
+              <p class="modal-footer">Foto</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-algoritmo-gh.jpg" alt="">
+              <p class="modal-footer">Algoritmo de Grasshopper</p>
+            </div>
+            <div class="project-slides">
+              <img src="img/projects/13-pendientes-caracola/pc-vista-rhino.jpg" alt="">
+              <p class="modal-footer">Vista del modelo de Grasshopper</p>
+            </div>
+            <a class="prev">&#10094;</a>
+            <a class="next">&#10095;</a>
+          </div>
+        </div>
+      </div>
     </section>
 
     <section class="curriculum" id="curriculum">
@@ -528,7 +623,8 @@
         <ul class="list-studies">
           <li>
             <h3>Máster de Aplicaciones Multimedia</h3>
-            <a class="curriculum__link" href="http://www.uoc.edu/portal/es/index.html" target="_blank">Universitat Oberta
+            <a class="curriculum__link" href="http://www.uoc.edu/portal/es/index.html" target="_blank">Universitat
+              Oberta
               de Catalunya</a>
           </li>
           <li>
@@ -541,7 +637,8 @@
           </li>
           <li>
             <h3>Curso Autodesk Revit</h3>
-            <a class="curriculum__link" href="http://www.metropa.es/__/school-cursos.html" target="_blank">Escuela Metropa</a>
+            <a class="curriculum__link" href="http://www.metropa.es/__/school-cursos.html" target="_blank">Escuela
+              Metropa</a>
           </li>
         </ul>
 
