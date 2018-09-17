@@ -487,6 +487,12 @@ body {
   .item11 {
     grid-column: 5;
   }
+  .item12 {
+    grid-column: 1;
+  }
+  .item13 {
+    grid-column: 3;
+  }
 }
 
 @media (max-width: 380px) {
@@ -531,6 +537,14 @@ body {
     grid-column: 1;
     grid-row: 6;
     transform: translateY(0%);
+  }
+  .item12 {
+    grid-row: 7;
+    transform: translateY(0%);
+  }
+  .item13 {
+    grid-row: 7;
+    transform: translateY(-50%);
   }
 }
 
