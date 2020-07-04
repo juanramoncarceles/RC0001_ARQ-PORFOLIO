@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link href="https://fonts.googleapis.com/css?family=Julius+Sans+One" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Encode+Sans+Semi+Expanded" rel="stylesheet">
-  <link rel="stylesheet" href="styles/styles.css">
-  <title>Ramón Cárceles</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./src/styles/styles.css">
+  <title>Ramón Cárceles | Architect</title>
 </head>
 
 <body>
@@ -17,32 +17,32 @@
     <section id="page-top" class="header-wrapper">
       <div class="header">
         <div class="title">
-          <h1 class="profession">ARQUITECTO</h1>
-          <p class="name">Juan Ramón Cárceles</p>
+          <h3 class="name">Ramón Cárceles</h3>
+          <h1 class="profession">ARCHITECT</h1>
         </div>
-        <img class="profile-pic" src="img/pic.jpg" alt="Juan Ramón imagen de perfil">
-        <p class="about">Soy un joven arquitecto con experiencia en despachos tanto de España como del extranjero y en
-          proyectos
-          de varias escalas, diseño de objetos e infografía arquitectónica. Me interesa la interacción entre la
-          tecnología
-          y el diseño, en especial el uso de software BIM y diseño paramétrico debido a las mejoras cualitativas que
-          aportan
-          al proceso proyectual. He estudiado arquitectura en Girona y en Milán y actualmente estoy terminando el
-          Máster
-          de aplicaciones multimedia en la UOC.</p>
-        <input class="navbar-main__toggle-checkbox" type="checkbox" id="menu-toggle-id" title="Menu">
-        <label class="navbar-main__toggle-label" for="menu-toggle-id">
+        <!-- <div class="contact">
+          <div class="contact-info">
+            <div class="email">
+              <p>juanramoncarceles@gmail.com</p>
+              <span class="tooltip">Click to copy</span>
+            </div>
+          </div>
+        </div> -->
+        <!-- <input class="navbar-main__toggle-checkbox" type="checkbox" id="menu-toggle-id" title="Menu"> -->
+        <!-- <label class="navbar-main__toggle-label" for="menu-toggle-id">
           <svg class="navbar-main__icon-hamburger" viewBox="0 0 100 60">
             <path d="M0 5 L100 5"></path>
             <path d="M0 30 L100 30"></path>
             <path d="M0 55 L100 55"></path>
           </svg>
-        </label>
-        <ul class="navigation">
-          <li><a href="#projects">PORFOLIO</a></li>
-          <li><a href="#curriculum">CURRÍCULUM</a></li>
-          <li><a href="#contact">CONTACTO</a></li>
-        </ul>
+        </label> -->
+        <div class="navigation">
+          <ul>
+            <li><a href="#projects">PORTFOLIO</a></li>
+            <li><a href="">RESUME</a></li>
+            <li><a href="https://www.linkedin.com/in/ramoncarceles/">LINKEDIN</a></li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -55,93 +55,95 @@
     </a>
     <!-- fin Button-go-top -->
 
-    <a class="go-to-frontend" title="Ir a porfolio frontend developer" href="../dev">Porfolio frontend developer</a>
+    <!-- <a class="go-to-frontend" title="Ir a porfolio frontend developer" href="">Porfolio frontend developer</a> -->
 
     <section class="projects-container" id="projects">
-      <h2 class="section-title section-title-projects">PORTFOLIO</h2>
-      <select class="project-type-selector" id="typeOfProjectSelector" title="Filtra por tipo de proyecto">
-        <option value="all">Todos los proyectos</option>
-        <!-- <option value="academic">Académicos</option>
-        <option value="parametric">Diseño paramétrico</option>
-        <option value="collaboration">Colaboraciones</option>
-        <option value="competition">Concursos</option> -->
-      </select>
+      <div class="projects-section-header">
+        <h2 class="section-title section-title-projects">PORTFOLIO</h2>
+        <!-- <select class="project-type-selector" id="typeOfProjectSelector" title="Filtra por tipo de proyecto">
+          <option value="all">Todos los proyectos</option>
+          <option value="academic">Académicos</option>
+          <option value="parametric">Diseño paramétrico</option>
+          <option value="collaboration">Colaboraciones</option>
+          <option value="competition">Concursos</option>
+        </select> -->
+      </div>
       <ul class="list-projects">
         <li class="project item1" data-projecttype="academic">
           <button data-project="Project01">
-            <img src="img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
+            <img src="./src/img/projects/01-atelier-escultor/ae-vista.jpg" alt="">
             <p>Atelier escultor<br><span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item2" data-projecttype="academic">
           <button data-project="Project02">
-            <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
+            <img src="./src/img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
             <p>Extensión albergue<br><span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item3" data-projecttype="competition">
           <button data-project="Project03">
-            <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
+            <img src="./src/img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
             <p>Extensión ski resort<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item4" data-projecttype="collaboration">
           <button data-project="Project04">
-            <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
+            <img src="./src/img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">con MOKE Architecten</span></p>
           </button>
         </li>
         <li class="project item5" data-projecttype="academic">
           <button data-project="Project05">
-            <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
+            <img src="./src/img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
             <p>Transformación frente muralla<span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item6" data-projecttype="collaboration">
           <button data-project="Project06">
-            <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
+            <img src="./src/img/projects/06-plat-house/ph-general-view.jpg" alt="">
             <p>Vivienda unifamiliar<span class="project__info">con NONA doo</span></p>
           </button>
         </li>
         <li class="project item7" data-projecttype="collaboration">
           <button data-project="Project07">
-            <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
+            <img src="./src/img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
             <p>Glamping bungalow<br><span class="project__info">con DAU</span></p>
           </button>
         </li>
         <li class="project item8" data-projecttype="competition">
           <button data-project="Project08">
-            <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
+            <img src="./src/img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
             <p>Espacio polivalente<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item9" data-projecttype="competition">
           <button data-project="Project09">
-            <img src="img/projects/09-hornachuelos-residencial/hr-vista1.jpg" alt="">
+            <img src="./src/img/projects/09-hornachuelos-residencial/hr-vista1.jpg" alt="">
             <p>Bloque residencial<br><span class="project__info">Concurso de ideas</span></p>
           </button>
         </li>
         <li class="project item10" data-projecttype="collaboration">
           <button data-project="Project10">
-            <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
+            <img src="./src/img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
             <p>Espacio multifuncional<br><span class="project__info">con Pep Boada</span></p>
           </button>
         </li>
         <li class="project item11" data-projecttype="academic">
           <button data-project="Project11">
-            <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
+            <img src="./src/img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
             <p>Conjunto residencial<br><span class="project__info">Académico</span></p>
           </button>
         </li>
         <li class="project item12" data-projecttype="collaboration parametric">
           <button data-project="Project12">
-            <img src="img/projects/12-oficinas-celra/oc-portada.jpg" alt="">
+            <img src="./src/img/projects/12-oficinas-celra/oc-portada.jpg" alt="">
             <p>Oficinas Celrà<br><span class="project__info">con DAU</span></p>
           </button>
         </li>
         <li class="project item13" data-projecttype="parametric">
           <button data-project="Project13">
-            <img src="img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
+            <img src="./src/img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
             <p>Pendientes caracola<br><span class="project__info">diseño joyas</span></p>
           </button>
         </li>
@@ -155,23 +157,23 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/01-atelier-escultor/ae-situacion.jpg">
+              <img src="./src/img/projects/01-atelier-escultor/ae-situacion.jpg">
               <p class="modal-footer">Situación en el barrio de Sant Daniel</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/01-atelier-escultor/ae-planta-seccion.jpg">
+              <img src="./src/img/projects/01-atelier-escultor/ae-planta-seccion.jpg">
               <p class="modal-footer">Planta y secciones</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/01-atelier-escultor/ae-axo-detalles.jpg">
+              <img src="./src/img/projects/01-atelier-escultor/ae-axo-detalles.jpg">
               <p class="modal-footer">Axonometría y detalles estructurales</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/01-atelier-escultor/ae-maqueta.jpg">
+              <img src="./src/img/projects/01-atelier-escultor/ae-maqueta.jpg">
               <p class="modal-footer">Maqueta</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/01-atelier-escultor/ae-vista.jpg">
+              <img src="./src/img/projects/01-atelier-escultor/ae-vista.jpg">
               <p class="modal-footer">Vista del interior</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -188,31 +190,31 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <video src="img/projects/02-extension-albergue/ea-video1.mp4" controls></video>
+              <video src="./src/img/projects/02-extension-albergue/ea-video1.mp4" controls></video>
               <p class="modal-footer">Recorrido exterior</p>
             </div>
             <div class="project-slides">
-              <video src="img/projects/02-extension-albergue/ea-video2.mp4" controls></video>
+              <video src="./src/img/projects/02-extension-albergue/ea-video2.mp4" controls></video>
               <p class="modal-footer">Recorrido interior</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/02-extension-albergue/ea-plantas.jpg">
+              <img src="./src/img/projects/02-extension-albergue/ea-plantas.jpg">
               <p class="modal-footer">Plantas</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/02-extension-albergue/ea-seccion.jpg" alt="">
+              <img src="./src/img/projects/02-extension-albergue/ea-seccion.jpg" alt="">
               <p class="modal-footer">Sección</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/02-extension-albergue/ea-maqueta.jpg" alt="">
+              <img src="./src/img/projects/02-extension-albergue/ea-maqueta.jpg" alt="">
               <p class="modal-footer">Maqueta</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
+              <img src="./src/img/projects/02-extension-albergue/ea-vista-exterior.jpg" alt="">
               <p class="modal-footer">Vista exterior</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/02-extension-albergue/ea-vista-interior.jpg" alt="">
+              <img src="./src/img/projects/02-extension-albergue/ea-vista-interior.jpg" alt="">
               <p class="modal-footer">Vista interior</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -229,19 +231,19 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/03-menuires-rehab/mr-concept.jpg" alt="">
+              <img src="./src/img/projects/03-menuires-rehab/mr-concept.jpg" alt="">
               <p class="modal-footer">Estrategia y concepto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/03-menuires-rehab/mr-axo.jpg" alt="">
+              <img src="./src/img/projects/03-menuires-rehab/mr-axo.jpg" alt="">
               <p class="modal-footer">Axonometria</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/03-menuires-rehab/mr-plantas.jpg" alt="">
+              <img src="./src/img/projects/03-menuires-rehab/mr-plantas.jpg" alt="">
               <p class="modal-footer">Plantas</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
+              <img src="./src/img/projects/03-menuires-rehab/mr-vista.jpg" alt="">
               <p class="modal-footer">Vista general</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -258,15 +260,15 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
+              <img src="./src/img/projects/04-hilversum-residential/hr-vista1.jpg" alt="">
               <p class="modal-footer">Vista del acceso principal</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/04-hilversum-residential/hr-vista2.jpg" alt="">
+              <img src="./src/img/projects/04-hilversum-residential/hr-vista2.jpg" alt="">
               <p class="modal-footer">Vista desde la carretera</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/04-hilversum-residential/hr-vista3.jpg" alt="">
+              <img src="./src/img/projects/04-hilversum-residential/hr-vista3.jpg" alt="">
               <p class="modal-footer">Vista posterior</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -283,31 +285,31 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-planta-seccion.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-planta-seccion.jpg" alt="">
               <p class="modal-footer">Sección y planta general</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-axo.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-axo.jpg" alt="">
               <p class="modal-footer">Axonometria</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-alzado.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-alzado.jpg" alt="">
               <p class="modal-footer">Alzado general</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-centro.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-vista-centro.jpg" alt="">
               <p class="modal-footer">Vista delante del centro cívico</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-general.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-vista-general.jpg" alt="">
               <p class="modal-footer">Vista general</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-restaurante.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-vista-restaurante.jpg" alt="">
               <p class="modal-footer">Vista interior restaurante</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
+              <img src="./src/img/projects/05-frente-muralla-hostalric/mh-vista-aerea.jpg" alt="">
               <p class="modal-footer">Vista aerea</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -324,23 +326,23 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/06-plat-house/ph-planta-seccion.jpg" alt="">
+              <img src="./src/img/projects/06-plat-house/ph-planta-seccion.jpg" alt="">
               <p class="modal-footer">Plantas y secciones</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/06-plat-house/ph-railing-detail.jpg" alt="">
+              <img src="./src/img/projects/06-plat-house/ph-railing-detail.jpg" alt="">
               <p class="modal-footer">Detalle de la barandilla</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/06-plat-house/ph-rotation.gif" alt="">
+              <img src="./src/img/projects/06-plat-house/ph-rotation.gif" alt="">
               <p class="modal-footer">Vistas</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/06-plat-house/ph-left-view.jpg" alt="">
+              <img src="./src/img/projects/06-plat-house/ph-left-view.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/06-plat-house/ph-general-view.jpg" alt="">
+              <img src="./src/img/projects/06-plat-house/ph-general-view.jpg" alt="">
               <p class="modal-footer">Vista general</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -357,27 +359,27 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-planta.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-planta.jpg" alt="">
               <p class="modal-footer">Plantas</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-emplazamiento1.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-emplazamiento1.jpg" alt="">
               <p class="modal-footer">Emplazamiento primera opción</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-emplazamiento2.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-emplazamiento2.jpg" alt="">
               <p class="modal-footer">Emplazamiento segunda opción</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-vista1.jpg" alt="">
               <p class="modal-footer">Vista aérea</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-vista2.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-vista2.jpg" alt="">
               <p class="modal-footer">Vista del acceso</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/07-camping-calonge/cc-vista3.jpg" alt="">
+              <img src="./src/img/projects/07-camping-calonge/cc-vista3.jpg" alt="">
               <p class="modal-footer">Vista interior</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -394,23 +396,23 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/08-lisboa-open-room/lor-planta.jpg" alt="">
+              <img src="./src/img/projects/08-lisboa-open-room/lor-planta.jpg" alt="">
               <p class="modal-footer">Planta</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/08-lisboa-open-room/lor-axo.jpg" alt="">
+              <img src="./src/img/projects/08-lisboa-open-room/lor-axo.jpg" alt="">
               <p class="modal-footer">Axonometria</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/08-lisboa-open-room/lor-maqueta1.jpg" alt="">
+              <img src="./src/img/projects/08-lisboa-open-room/lor-maqueta1.jpg" alt="">
               <p class="modal-footer">Maqueta</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/08-lisboa-open-room/lor-maqueta2.jpg" alt="">
+              <img src="./src/img/projects/08-lisboa-open-room/lor-maqueta2.jpg" alt="">
               <p class="modal-footer">Maqueta</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
+              <img src="./src/img/projects/08-lisboa-open-room/lor-vista.jpg" alt="">
               <p class="modal-footer">Vista del espacio semi interior principal</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -427,23 +429,23 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/09-hornachuelos-residencial/hr-esquema-funcional.jpg" alt="">
+              <img src="./src/img/projects/09-hornachuelos-residencial/hr-esquema-funcional.jpg" alt="">
               <p class="modal-footer">Esquema funcional</p>
             </div>
             <div class="project-slides">
-              <video src="img/projects/09-hornachuelos-residencial/hr-video.mp4" controls></video>
+              <video src="./src/img/projects/09-hornachuelos-residencial/hr-video.mp4" controls></video>
               <p class="modal-footer">Vista general exterior</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/09-hornachuelos-residencial/hr-plantas.jpg" alt="">
+              <img src="./src/img/projects/09-hornachuelos-residencial/hr-plantas.jpg" alt="">
               <p class="modal-footer">Plantas</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/09-hornachuelos-residencial/hr-seccion.jpg" alt="">
+              <img src="./src/img/projects/09-hornachuelos-residencial/hr-seccion.jpg" alt="">
               <p class="modal-footer">Sección</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/09-hornachuelos-residencial/hr-vista2.jpg" alt="">
+              <img src="./src/img/projects/09-hornachuelos-residencial/hr-vista2.jpg" alt="">
               <p class="modal-footer">Vista del espació común interior</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -460,35 +462,35 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-planta-baja.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-planta-baja.jpg" alt="">
               <p class="modal-footer">Planta baja</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-planta-primera.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-planta-primera.jpg" alt="">
               <p class="modal-footer">Planta primera</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-seccion.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-seccion.jpg" alt="">
               <p class="modal-footer">Sección</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-vista1.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-vista2.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-vista2.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-vista3.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-vista3.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-vista4.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-vista4.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/10-eiti-barbera/eb-vista5.jpg" alt="">
+              <img src="./src/img/projects/10-eiti-barbera/eb-vista5.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -505,31 +507,31 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-axo.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-axo.jpg" alt="">
               <p class="modal-footer">Axonometria del complejo</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-planta-baja.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-planta-baja.jpg" alt="">
               <p class="modal-footer">Planta baja bloque</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-planta-primera.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-planta-primera.jpg" alt="">
               <p class="modal-footer">Planta primera bloque</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-planta-torres.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-planta-torres.jpg" alt="">
               <p class="modal-footer">Planta niveles superiores bloque</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-seccion.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-seccion.jpg" alt="">
               <p class="modal-footer">Sección</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-vista1.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/11-rubattino-residential/rr-vista2.jpg" alt="">
+              <img src="./src/img/projects/11-rubattino-residential/rr-vista2.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -546,23 +548,23 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/12-oficinas-celra/oc-vista1.jpg" alt="">
+              <img src="./src/img/projects/12-oficinas-celra/oc-vista1.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/12-oficinas-celra/oc-vista2.jpg" alt="">
+              <img src="./src/img/projects/12-oficinas-celra/oc-vista2.jpg" alt="">
               <p class="modal-footer">Vista</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/12-oficinas-celra/oc-algoritmos-gh.jpg" alt="">
+              <img src="./src/img/projects/12-oficinas-celra/oc-algoritmos-gh.jpg" alt="">
               <p class="modal-footer">Algoritmos de Grasshopper</p>
             </div>
             <div class="project-slides">
-              <video src="img/projects/12-oficinas-celra/oc-video-techo.mp4" controls></video>
+              <video src="./src/img/projects/12-oficinas-celra/oc-video-techo.mp4" controls></video>
               <p class="modal-footer">Video pruebas falso techo entrada</p>
             </div>
             <div class="project-slides">
-              <video src="img/projects/12-oficinas-celra/oc-video-filtro.mp4" controls></video>
+              <video src="./src/img/projects/12-oficinas-celra/oc-video-filtro.mp4" controls></video>
               <p class="modal-footer">Video pruebas filtro salas reunión</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -579,35 +581,35 @@
           </div>
           <div class="modal-body">
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-foto4.jpg" alt="">
               <p class="modal-footer">Foto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-foto3.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-foto3.jpg" alt="">
               <p class="modal-footer">Foto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-planos.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-planos.jpg" alt="">
               <p class="modal-footer">Planos</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-foto5.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-foto5.jpg" alt="">
               <p class="modal-footer">Foto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-foto2.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-foto2.jpg" alt="">
               <p class="modal-footer">Foto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-foto1.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-foto1.jpg" alt="">
               <p class="modal-footer">Foto</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-algoritmo-gh.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-algoritmo-gh.jpg" alt="">
               <p class="modal-footer">Algoritmo de Grasshopper</p>
             </div>
             <div class="project-slides">
-              <img src="img/projects/13-pendientes-caracola/pc-vista-rhino.jpg" alt="">
+              <img src="./src/img/projects/13-pendientes-caracola/pc-vista-rhino.jpg" alt="">
               <p class="modal-footer">Vista del modelo de Grasshopper</p>
             </div>
             <a class="prev">&#10094;</a>
@@ -617,71 +619,12 @@
       </div>
     </section>
 
-    <section class="curriculum" id="curriculum">
-      <div>
-        <h2 class="section-title">FORMACIÓN</h2>
-        <ul class="list-studies">
-          <li>
-            <h3>Máster de Aplicaciones Multimedia</h3>
-            <a class="curriculum__link" href="http://www.uoc.edu/portal/es/index.html" target="_blank">Universitat
-              Oberta
-              de Catalunya</a>
-          </li>
-          <li>
-            <h3>Grado en Arquitectura</h3>
-            <a class="curriculum__link" href="https://www.udg.edu/ca/" target="_blank">Universitat de Girona</a>
-          </li>
-          <li>
-            <h3>Curso JAVA & MySQL</h3>
-            <a class="curriculum__link">Fundació Catalana de l'Esplai</a>
-          </li>
-          <li>
-            <h3>Curso Autodesk Revit</h3>
-            <a class="curriculum__link" href="http://www.metropa.es/__/school-cursos.html" target="_blank">Escuela
-              Metropa</a>
-          </li>
-        </ul>
-
-        <h2 class="section-title">EXPERIENCIA</h2>
-        <ul class="list-experiences">
-          <li>
-            <h3>DAU. Diseny Arquitectura i Urbanisme</h3>
-            <p class="experience__period">Jun.2017 | Ago.2018</p>
-          </li>
-          <li>
-            <h3><a href="http://www.pepboada.com/" target="_blank">Pep Boada</a></h3>
-            <p class="experience__period">Feb.2017 | Ago.2017</p>
-          </li>
-          <li>
-            <h3><a href="https://www.mokearchitecten.nl/" target="_blank">Moke Architecten</a></h3>
-            <p class="experience__period">Nov.2016 | Abr.2017</p>
-          </li>
-          <li>
-            <h3><a href="http://davorbusnja.com/" target="_blank">@ n'onA d.o.o.<br>Davor Busnja</a></h3>
-            <p class="experience__period">May.2016 | Ago.2016</p>
-          </li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="contact" id="contact">
-      <h2 class="section-title">CONTACTO</h2>
-      <div class="contact-info">
-        <div class="email">
-          <p>juanramoncarceles@gmail.com</p>
-          <span class="tooltip">¡Haz click para copiarlo!</span>
-        </div>
-        <p>Barcelona</p>
-        <a href="https://www.linkedin.com/in/ramoncarceles/" target="_blank">LinkedIn</a>
-      </div>
-    </section>
-
   </div>
 
-  <script src="scripts/modalWindows.js"></script>
-  <script src="scripts/previewSlides.js"></script>
-  <script src="scripts/filterProjects.js"></script>
-  <script src="scripts/copyToClipboard.js"></script>
+  <script src="./src/scripts/modalWindows.js"></script>
+  <script src="./src/scripts/previewSlides.js"></script>
+  <!-- <script src="./src/scripts/filterProjects.js"></script> -->
+  <!-- <script src="./src/scripts/copyToClipboard.js"></script> -->
 
 </body>
 
